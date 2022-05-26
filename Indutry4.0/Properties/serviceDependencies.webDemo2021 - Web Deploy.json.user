@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": false,
+      "restoreTime": "2022-05-21T11:16:18.0984749Z"
+    }
+  },
+  "parameters": {
+    "webDemo2021.resourceGroupName": {
+      "Name": "webDemo2021.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "web-project-2021"
+    },
+    "webDemo2021.resourceGroupLocation": {
+      "Name": "webDemo2021.resourceGroupLocation",
+      "Type": null,
+      "Value": "australiaeast"
+    },
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "d6823749-a6db-41e2-8fe2-30210cddce2b"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "DefaultResourceGroup-EAU"
+    },
+    "webDemo2021.resourceName": {
+      "Name": "webDemo2021.resourceName",
+      "Type": null,
+      "Value": "webDemo2021"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "d6823749-a6db-41e2-8fe2-30210cddce2b"
+    },
+    "webDemo2021.subscriptionId": {
+      "Name": "webDemo2021.subscriptionId",
+      "Type": "subscription",
+      "Value": "d6823749-a6db-41e2-8fe2-30210cddce2b"
+    }
+  }
+}

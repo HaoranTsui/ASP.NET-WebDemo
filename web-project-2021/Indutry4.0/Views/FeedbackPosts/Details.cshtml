@@ -1,0 +1,77 @@
+﻿@model Indutry4._0.Models.FeedbackPost
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Feedback Details</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Date)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Date)
+        </dd>
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.UserName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserName)
+        </dd>
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Heading)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Heading)
+        </dd>
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.StarRating)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.StarRating)
+        </dd>
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Feedback)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Feedback)
+        </dd>
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Agree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Agree)
+        </dd>
+        <dt style="text-align:right;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Disagree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Disagree)
+        </dd>
+        <dt style="text-align: right; overflow: hidden; text-overflow: ellipsis;"class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CompanyOrganizationName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CompanyOrganizationName)
+        </dd>
+        @*<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.canIncreaseAgree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.canIncreaseAgree)
+        </dd>*@
+        @*<dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.canIncreaseDisagree)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.canIncreaseDisagree)
+        </dd>*@
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-controller="Home" asp-action="companiesOrganizations" > Back to Companies and Organisations Page</a>
+</div>

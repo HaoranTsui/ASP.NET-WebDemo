@@ -1,0 +1,99 @@
+﻿@model IEnumerable<Indutry4._0.Models.DiscussionForum>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@*show/hide some hyperlinks depending on the role of the user.*@
+@{
+    if (User.Identity.IsAuthenticated)
+    {
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+    }
+}
+
+@foreach (var item in Model)
+{
+    <h2>@Html.DisplayFor(modelItem => item.TopicTitle)</h2>
+    <p>Agree: @Html.DisplayFor(modelItem => item.Agree)</p>
+    <p>Disagree: @Html.DisplayFor(modelItem => item.Disagree)</p>
+    <p>@Html.DisplayFor(modelItem => item.MessageContent)</p>
+    <p>Posted by <b>@Html.DisplayFor(modelItem => item.UserName)</b> on @Html.DisplayFor(modelItem => item.PostDate)</p>
+    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+    <a asp-action="IncreaseLike" asp-route-id="@item.Id">Like(+)</a>
+    <hr />
+}
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.PostDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TopicTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MessageContent)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Agree)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disagree)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PostDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TopicTitle)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MessageContent)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Agree)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disagree)
+                </td>
+                <td>
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    }
+                    |<a asp-action="Details" asp-route-id="@item.Id">Details</a>|
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
+                    |
+                    <a asp-action="Agree" asp-route-id="@item.Id">Agree</a>
+                    |
+                    <a asp-action="Disagree" asp-route-id="@item.Id">Disagree</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

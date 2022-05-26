@@ -1,0 +1,438 @@
+﻿@model IEnumerable<Indutry4._0.Models.FeedbackPost>
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!--1. Background and Title-->
+<section id="emergingPage_background">
+    <!--1st background image-->
+    <header id="header2"> Emerging Technologies</header><!--large header-->
+    <p id="intro">
+        Industry 4.0 fundamentally changes the way in which businesses create and capture value.
+        This shift is enabled by a set of technologies including autonomous robots, simulation technology,
+        system integration, the Internet of Things (IoT), cybersecurity,
+        cloud computing, additive manufacturing, augmented reality and big data.
+        (https://www.swinburne.edu.au/about/strategy-initiatives/industry-4-0/what-is-industry-4-0/)
+    </p>
+</section>
+
+
+<!--2. The 6 technology sections-->
+
+<!--Collapse 1-->
+<div class="accordion" id="accordionExample">
+    <div class="card">
+        <!--HEAD-->
+            <img src="~/images/Homepage/ai.jpg" />
+        <div class="card-header" id="headingOne">
+            <h2 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Artificial Intelligence (AI)
+                </button>
+            </h2>
+        </div>
+
+        <!--CONTENT-->
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/ibm.jpg" />
+                        <figcaption>
+                            <h2>IBM AI</h2>
+                            <a href="https://www.ibm.com/watson/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/microsoft.jpg" />
+                        <figcaption>
+                            <h2>Microsoft AI</h2>
+                            <a href="https://www.microsoft.com/en-us/ai/default.aspx">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/csiro.jpg" />
+                        <figcaption>
+                            <h2>CSIRO AI</h2>
+                            <a href="https://data61.csiro.au/en/Our-Work/AI-and-Machine-Learning">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/amazon.jpg" />
+                        <figcaption>
+                            <h2>AMAZON AI</h2>
+                            <a href="https://aws.amazon.com/machine-learning/ai-lex-polly-rekognition/">Click Here</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Collapse 2-->
+    <div class="card">
+        <!--HEAD-->
+        <div>
+            <img src="~/images/Homepage/iot.jpg" />
+
+        </div>
+        <div class="card-header" id="headingTwo">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Internet of Things (IoT)
+                </button>
+            </h2>
+        </div>
+        <!--CONTENT-->
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+                    <!--figure 1-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/ibm.jpg" />
+                        <figcaption>
+                            <h2>IBM IoT</h2>
+                            <a href="https://www.ibm.com/blogs/internet-of-things/industry-4-0/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 2-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/microsoft.jpg" />
+                        <figcaption>
+                            <h2>Microsoft IoT</h2>
+                            <a href="https://azure.microsoft.com/en-au/overview/iot/?site=mscom_iot">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 3-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/amazon.jpg" />
+                        <figcaption>
+                            <h2>Amazon IoT</h2>
+                            <a href="https://aws.amazon.com/iot/?sc_channel=PS&sc_campaign=acquisition_AU&sc_publisher=google&sc_medium=iot_nb&sc_content=iot_e&sc_detail=iot&sc_category=iot&sc_segment=154387165862&sc_matchtype=e&sc_country=AU&s_kwcid=AL!4422!3!154387165862!e!!g!!iot&ef_id=WmksLwAAAHVHXlHa:20180805102347:s">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 4-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/cio.jpg" />
+                        <figcaption>
+                            <h2>CIO IoT</h2>
+                            <a href="https://www.cio.com/article/3496289/federal-government-launches-ai-and-iot-projects.html">Click Here</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+    </div>
+
+
+    <!--Collapse 3-->
+    <div class="card">
+        <!--HEAD-->
+        <div>
+            <img src="~/images/Homepage/cognitive.jpg" />
+
+        </div>
+        <div class="card-header" id="headingThree">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Cognitive Computing
+                </button>
+            </h2>
+        </div>
+        <!--CONTENT-->
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+                    <!--figure 1-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/ibm.jpg" />
+                        <figcaption>
+                            <h2>IBM CC</h2>
+                            <a href="https://www.ibm.com/services/artificial-intelligence">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 2-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/microsoft.jpg" />
+                        <figcaption>
+                            <h2>Microsoft CC</h2>
+                            <a href="https://azure.microsoft.com/en-au/services/cognitive-services/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 3-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/google.jpg" />
+                        <figcaption>
+                            <h2>Google CC</h2>
+                            <a href="https://cloud.google.com/vision/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 4-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/Forbes.jpg" />
+                        <figcaption>
+                            <h2>Forbes CC</h2>
+                            <a href="https://www.forbes.com/sites/bernardmarr/2016/03/23/what-everyone-should-know-about-cognitive-computing/#62c3c5885088">Click Here</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Collapse 4-->
+    <div class="card">
+        <!--HEAD-->
+        <div>
+            <img src="~/images/Homepage/cloud.jpg" />
+
+        </div>
+        <div class="card-header" id="headingFour">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Cloud Computing
+                </button>
+            </h2>
+        </div>
+        <!--CONTENT-->
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+
+                    <!--figure 1-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/google.jpg" />
+                        <figcaption>
+                            <h2>Google Cloud</h2>
+                            <a href="https://cloud.google.com/solutions/iot/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 2-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/microsoft.jpg" />
+                        <figcaption>
+                            <h2>Mircosoft Cloud</h2>
+                            <a href="https://azure.microsoft.com/en-au/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 3-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/ibm.jpg" />
+                        <figcaption>
+                            <h2>IBM Cloud</h2>
+                            <a href="https://www.ibm.com/cloud/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 4-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/amazon.jpg" />
+                        <figcaption>
+                            <h2>Amazon Cloud</h2>
+                            <a href="https://aws.amazon.com/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Collapse 5-->
+    <div class="card">
+        <!--HEAD-->
+        <div>
+            <img src="~/images/Homepage/robotics.jpg" />
+
+        </div>
+        <div class="card-header" id="headingFive">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    Robotics
+                </button>
+            </h2>
+        </div>
+        <!--CONTENT-->
+        <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+
+                    <!--figure 1-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/Forbes.jpg" />
+                        <figcaption>
+                            <h2>Forbes</h2>
+                            <a href="https://www.forbes.com/sites/jimlawton/2018/03/20/the-role-of-robots-in-industry-4-0/#69de1dca706b">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 2-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/zdnet.jpg" />
+                        <figcaption>
+                            <h2>ZDNet</h2>
+                            <a href="https://www.zdnet.com/article/robotics-and-industry-4-0/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 3-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/iscoop.jpg" />
+                        <figcaption>
+                            <h2>I-Scoop robots cobots</h2>
+                            <a href="https://www.i-scoop.eu/robots-cobots-logistics-4-0/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 4-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/aw.jpg" />
+                        <figcaption>
+                            <h2>Automation World</h2>
+                            <a href="https://www.automationworld.com/industry-40-here-are-you-ready">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Collapse 6-->
+    <div class="card">
+        <!--HEAD-->
+        <div>
+            <img src="~/images/Homepage/blockchain.jpg" />
+
+        </div>
+        <div class="card-header" id="headingSix">
+            <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    Blockchain
+                </button>
+            </h2>
+        </div>
+        <!--CONTENT-->
+        <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+            <div class="card-body">
+                <div class="row">
+
+                    <!--figure 1-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/bc.jpg" />
+                        <figcaption>
+                            <h2>Blockchain</h2>
+                            <a href="https://www.blockchain.com/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 2-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/ibm.jpg" />
+                        <figcaption>
+                            <h2>PC Maganzine</h2>
+                            <a href="https://au.pcmag.com/amazon-web-services/46389/feature/blockchain-the-invisible-technology-thats-changing-the-world">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 3-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/forbes.jpg" />
+                        <figcaption>
+                            <h2>Forbes Blockchains</h2>
+                            <a href="https://www.forbes.com/sites/andrewrossow/2018/04/11/bringing-blockchain-into-industry-4-0/">Click Here</a>
+                        </figcaption>
+                    </figure>
+
+                    <!--figure 4-->
+                    <figure class='col-md-6 col-sm-6 col-12'>
+                        <img id="imgCollapse" src="~/images/Icon/csiro.jpg" />
+                        <figcaption>
+                            <h2>CSIRO Blockchains</h2>
+                            <a href="https://www.data61.csiro.au/en/our-work/safety-and-security/secure-systems-and-platforms/blockchain">Click Here</a>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+@*<section>
+    <h1 id="feedback">Feedback</h1>
+</section>*@
+
+<!--4. Feedback Posts-->
+@*<section>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div style="text-align:center;">
+            <a href="~/FeedbackPosts/Create/" class="btn btn-info">Submit your feedback</a>
+        </div>
+    }
+    else
+    {
+        <div style="text-align:center;">
+            Please <a href="~/Identity/Account/Login?returnUrl=~/Home/companiesOrganizations">login</a> or
+            <a href="~/Identity/Account/Register?returnUrl=~/Home/companiesOrganizations">create an account</a>
+            to submit your feedback on this page
+        </div>
+    }
+
+    <hr />
+
+
+</section>*@
+
+@*<section>
+    @foreach (var item in Model)
+    {
+        <h2>@Html.DisplayFor(modelItem => item.Heading)</h2>
+        <p>&#64;@Html.DisplayFor(modelItem => item.CompanyOrganizationName)</p>
+        <p>@Html.DisplayFor(modelItem => item.StarRating)</p>
+        <p>
+            @{
+                for (int i = 0; i < item.StarRating; i++)
+                {
+                    <span style="color: #f8bd08; ">&#x2605;</span>
+                }
+                for (int i = 0; i < 5 - item.StarRating; i++)
+                {
+                    <span>&#x2606;</span>
+                }
+            }
+        </p>
+
+        <p>@Html.DisplayFor(modelItem => item.Feedback)</p>
+        <p>Posted by <b>@Html.DisplayFor(modelItem => item.UserName)</b> on @Html.DisplayFor(modelItem => item.Date)</p>
+
+        @if (User.IsInRole("Manager"))
+        {
+            <a asp-controller="FeedbackPosts" asp-action="Edit" asp-route-id="@item.Id" style="float: right;" class="btn btn-light">Edit</a>
+            <a asp-controller="FeedbackPosts" asp-action="Delete" asp-route-id="@item.Id" style="float: right;" class="btn btn-default">Delete</a>
+        }
+
+        <a asp-controller="FeedbackPosts" asp-action="Details" asp-route-id="@item.Id" class="btn btn-default">Details</a>
+        <a asp-controller="FeedbackPosts" asp-action="IncreaseAgree" asp-route-id="@item.Id" class="btn btn-success">Agree(@item.Agree)</a>
+        <a asp-controller="FeedbackPosts" asp-action="IncreaseDisagree" asp-route-id="@item.Id" class="btn btn-danger">Disagree(@item.Disagree)</a>
+        <hr />
+    }
+</section>*@
+
+

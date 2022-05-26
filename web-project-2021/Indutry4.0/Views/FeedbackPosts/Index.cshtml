@@ -1,0 +1,139 @@
+﻿@model IEnumerable<Indutry4._0.Models.FeedbackPost>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@{
+    if (User.Identity.IsAuthenticated)
+    {
+        <p>
+            <a asp-action="Create">Create New</a>
+        </p>
+    }
+}
+
+@foreach (var item in Model)
+{
+    <h2>@Html.DisplayFor(modelItem => item.Heading)</h2>
+    <p>@Html.DisplayFor(modelItem => item.CompanyOrganizationName)</p>
+    @*<p>@Html.DisplayFor(modelItem => item.StarRating)</p>*@
+    <p>
+        @{
+            for (int i = 0; i < item.StarRating; i++)
+            {
+                <span style="color: #f8bd08; ">&#x2605;</span>
+            }
+            for (int i = 0; i < 5 - item.StarRating; i++)
+            {
+                <span>&#x2606;</span>
+            }
+        }
+    </p>
+
+    <p>@Html.DisplayFor(modelItem => item.Feedback)</p>
+    <p>Posted by <b>@Html.DisplayFor(modelItem => item.UserName)</b> on @Html.DisplayFor(modelItem => item.Date)</p>
+    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-default">Edit</a>
+    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-default">Details</a>
+    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger">Delete</a>
+    <a asp-action="IncreaseAgree" asp-route-id="@item.Id" class="btn btn-success">Agree(@item.Agree)</a>
+    <a asp-action="IncreaseDisagree" asp-route-id="@item.Id" class="btn btn-danger">Disagree(@item.Disagree)</a>
+    <hr />
+}
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Date)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Heading)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CompanyOrganizationName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.StarRating)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Feedback)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Agree)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Disagree)
+            </th>
+            @*<th>
+                    @Html.DisplayNameFor(model => model.canIncreaseAgree)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.canIncreaseDisagree)
+                </th>*@
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Heading)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CompanyOrganizationName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StarRating)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Feedback)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Agree)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Disagree)
+                </td>
+
+                @*<td>
+                        @Html.DisplayFor(modelItem => item.canIncreaseAgree)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.canIncreaseDisagree)
+                    </td>*@
+                <td>
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+                    }
+                    |
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                    @if (User.IsInRole("Manager"))
+                    {
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    }
+                    |
+                    <a asp-action="IncreaseAgree" asp-route-id="@item.Id">Agree</a>
+                    |
+                    <a asp-action="IncreaseDisagree" asp-route-id="@item.Id">Disagree</a>
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>
