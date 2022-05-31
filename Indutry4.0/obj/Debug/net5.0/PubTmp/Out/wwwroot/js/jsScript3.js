@@ -1,15 +1,16 @@
+//ContactAndAbout
 //Add header here
 const info = ["Website Author", "Email", "Telephone"];
 
 const details = [
     //Ai
-    `Haoran Cui`,
+    `xxxx xxx`,
 
     //IOT
-    `u3217210@uni.canberra.edu.au`,
+    `abc@xxx.com`,
 
     //Congnitive computing
-    `+61-3217210`,
+    `+xx-xxxxxxxx`,
 ];
 
 var images = ["2", "3", "4"];

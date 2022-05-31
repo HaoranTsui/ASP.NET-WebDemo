@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA2skdeEg9kEqmRBB4ARYQngAAAAACAAAAAAAQZgAAAAEAACAAAAD1KeoRuzdm2tS/a3Va9O9GK9M3J0astAX8uyzMG2ucugAAAAAOgAAAAAIAACAAAAAZbo4YLQzYOmOEyZuj29YWpbw23X7i2r/f4oyc1Ya3pyAAAACR+N0RmEanv/RrEp9G9AWs5cPfuYQYit5/COLcPwdr0kAAAADCM+v6LCv0Cu8u5AAIqL6/BmkdaX2HOEENxq4PyJkHqrjnllazZEeKqS7KRFoYWoebINrluhq6HDzns1pUwRHH</EncryptedPassword>
+    <History>False|2022-05-29T12:34:50.4406338Z;True|2022-05-29T22:30:02.5532299+10:00;</History>
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="AzureConnection">
+      <Value>Server=tcp:indusdemo.database.windows.net,1433%3bInitial Catalog=db1%3bPersist Security Info=False%3bUser ID=demo%3bPassword=Industry2021%3bMultipleActiveResultSets=False%3bEncrypt=True%3bTrustServerCertificate=False%3bConnection Timeout=60%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

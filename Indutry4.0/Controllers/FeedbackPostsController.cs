@@ -187,10 +187,10 @@ namespace Indutry4._0.Controllers
                 //}
                 try
                 {
-                    if(User.Identity.IsAuthenticated && feedbackPost.canIncreaseAgree)
+                    if(User.Identity.IsAuthenticated && feedbackPost.CanIncreaseAgree)
                     {
                         feedbackPost.Agree++;
-                        feedbackPost.canIncreaseAgree = false;
+                        feedbackPost.CanIncreaseAgree = false;
                         _context.Update(feedbackPost);
                         await _context.SaveChangesAsync();
                     }
@@ -237,10 +237,10 @@ namespace Indutry4._0.Controllers
                 //}
                 try
                 {
-                    if (User.Identity.IsAuthenticated && feedbackPost.canIncreaseDisagree)
+                    if (User.Identity.IsAuthenticated && feedbackPost.CanIncreaseDisagree)
                     {
                         feedbackPost.Disagree++;
-                        feedbackPost.canIncreaseDisagree = false;
+                        feedbackPost.CanIncreaseDisagree = false;
                         _context.Update(feedbackPost);
                         await _context.SaveChangesAsync();
                     }

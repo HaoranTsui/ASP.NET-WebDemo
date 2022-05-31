@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "K:\\2_web_project\\web-project-2021\\web-project-2021\\Indutry4.0\\Indutry4.0.csproj": {}
+    "K:\\2_web_project\\industry4.0\\Indutry4.0\\Indutry4.0.csproj": {}
   },
   "projects": {
-    "K:\\2_web_project\\web-project-2021\\web-project-2021\\Indutry4.0\\Indutry4.0.csproj": {
+    "K:\\2_web_project\\industry4.0\\Indutry4.0\\Indutry4.0.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "K:\\2_web_project\\web-project-2021\\web-project-2021\\Indutry4.0\\Indutry4.0.csproj",
+        "projectUniqueName": "K:\\2_web_project\\industry4.0\\Indutry4.0\\Indutry4.0.csproj",
         "projectName": "Indutry4.0",
-        "projectPath": "K:\\2_web_project\\web-project-2021\\web-project-2021\\Indutry4.0\\Indutry4.0.csproj",
+        "projectPath": "K:\\2_web_project\\industry4.0\\Indutry4.0\\Indutry4.0.csproj",
         "packagesPath": "C:\\Users\\jyakk\\.nuget\\packages\\",
-        "outputPath": "K:\\2_web_project\\web-project-2021\\web-project-2021\\Indutry4.0\\obj\\",
+        "outputPath": "K:\\2_web_project\\industry4.0\\Indutry4.0\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -48,7 +48,7 @@
           "dependencies": {
             "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[5.0.9, )"
+              "version": "[5.0.0, )"
             },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",

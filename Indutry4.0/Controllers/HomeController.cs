@@ -49,8 +49,8 @@ namespace Indutry4._0.Controllers
             {
                 foreach (var post in _context.FeedbackPost)
                 {
-                    post.canIncreaseAgree = true;
-                    post.canIncreaseDisagree = true;
+                    post.CanIncreaseAgree = true;
+                    post.CanIncreaseDisagree = true;
                 }
                 await _context.SaveChangesAsync();
             }

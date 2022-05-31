@@ -12,6 +12,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore;
 
 namespace Indutry4._0
 {
@@ -20,6 +21,9 @@ namespace Indutry4._0
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            //var config = new ConfigurationBuilder()
+            //            .AddEnvironmentVariables()
+            //            .Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -39,13 +43,19 @@ namespace Indutry4._0
 
             services.AddIdentity<IdentityUser, IdentityRole>()
               .AddEntityFrameworkStores<ApplicationDbContext>()
-              .AddDefaultUI();
+              .AddDefaultUI()
+              .AddDefaultTokenProviders();
 
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+
+            //app.UseDeveloperExceptionPage();
+            //app.UseMigrationsEndPoint();
+            //app.UseDatabaseErrorPage();
+            
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
